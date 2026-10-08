@@ -52,9 +52,9 @@ class DoctorController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(Doctor $doctor)
     {
-        //
+        return view('doctors.show', compact('doctor'));
     }
 
     /**
